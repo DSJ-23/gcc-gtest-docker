@@ -1,1 +1,2 @@
-docker-compose up --build -d
+rm -rf build
+docker-compose up --build

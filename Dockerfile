@@ -1,11 +1,14 @@
-FROM gcc:4.9
-RUN apt-get update && apt-get -y install cmake
+FROM gcc:latest
+# RUN apt-get install software-properties-common 
+# RUN add-apt-repository ppa:george-edison55/cmake-3.x
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
+
+RUN apt-get update && apt-get -y install cmake
 
 RUN cmake CMakeLists.txt
 RUN make
 
-# RUN sleep 3600
 # RUN gcc -o myapp main.c
-CMD ["./main"]
+
+CMD ["./build/main"]

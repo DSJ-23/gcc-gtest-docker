@@ -1,1 +1,9 @@
 build.sh
+setup.sh
+CMakeCache.txt
+CMakeFiles
+_deps
+cmake_install.cmake
+docker-compose.yml
+Dockerfile
+.dockerignore
