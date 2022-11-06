@@ -1,7 +1,6 @@
 #include<iostream>
 #include "adder/adder.h"
-#include "fmt/core.h"
-
+#include <fmt/core.h>
 
 int main(){
     std::cout << "test" << std::endl;
