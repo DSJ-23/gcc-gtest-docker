@@ -1,0 +1,7 @@
+add_test([=[HelloGTEST.first]=]  /Users/danielsilva/Documents/Docker/docker-gcc/build/main_test [==[--gtest_filter=HelloGTEST.first]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HelloGTEST.first]=]  PROPERTIES WORKING_DIRECTORY /Users/danielsilva/Documents/Docker/docker-gcc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[HelloGTEST.second]=]  /Users/danielsilva/Documents/Docker/docker-gcc/build/main_test [==[--gtest_filter=HelloGTEST.second]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HelloGTEST.second]=]  PROPERTIES WORKING_DIRECTORY /Users/danielsilva/Documents/Docker/docker-gcc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[HelloGTEST.third]=]  /Users/danielsilva/Documents/Docker/docker-gcc/build/main_test [==[--gtest_filter=HelloGTEST.third]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HelloGTEST.third]=]  PROPERTIES WORKING_DIRECTORY /Users/danielsilva/Documents/Docker/docker-gcc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  main_test_TESTS HelloGTEST.first HelloGTEST.second HelloGTEST.third)

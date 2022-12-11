@@ -25,13 +25,28 @@ target_link_libraries(main adder)
 target_link_libraries(main fmt)
 
 add_executable(
-  hello_test
-  hello_test.cc
+  main_test
+  main.t.cpp
 )
 
 target_link_libraries(
-  hello_test
+  main_test
   GTest::gtest_main
+  adder
+  fmt
 )
 include(GoogleTest)
-gtest_discover_tests(hello_test)
+gtest_discover_tests(main_test)
+
+
+# add_executable(
+#   hello_test
+#   hello_test.cc
+# )
+
+# target_link_libraries(
+#   hello_test
+#   GTest::gtest_main
+# )
+# include(GoogleTest)
+# gtest_discover_tests(hello_test)

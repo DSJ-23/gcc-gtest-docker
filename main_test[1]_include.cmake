@@ -1,0 +1,5 @@
+if(EXISTS "/Users/danielsilva/Documents/Docker/docker-gcc/main_test[1]_tests.cmake")
+  include("/Users/danielsilva/Documents/Docker/docker-gcc/main_test[1]_tests.cmake")
+else()
+  add_test(main_test_NOT_BUILT main_test_NOT_BUILT)
+endif()
