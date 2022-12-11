@@ -29,6 +29,7 @@ target_link_libraries(main bankaccount)
 add_executable(
   main_test
   main.t.cpp
+  test/coordinate.t.cpp
 )
 
 target_link_libraries(
