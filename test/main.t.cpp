@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "adder/adder.h"
+#include "../adder/adder.h"
 
 TEST(HelloGTEST, first){
     bool test = false;
