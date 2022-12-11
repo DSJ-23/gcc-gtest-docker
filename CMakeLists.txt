@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.00)
 
 project(main)
 add_subdirectory(adder)
+add_subdirectory(bankaccount)
 
 include(FetchContent)
 FetchContent_Declare(fmt
@@ -23,6 +24,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)
 add_executable(main main.cpp)
 target_link_libraries(main adder)
 target_link_libraries(main fmt)
+target_link_libraries(main bankaccount)
 
 add_executable(
   main_test
@@ -34,6 +36,7 @@ target_link_libraries(
   GTest::gtest_main
   adder
   fmt
+  bankaccount
 )
 include(GoogleTest)
 gtest_discover_tests(main_test)
